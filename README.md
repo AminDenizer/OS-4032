@@ -5,7 +5,7 @@ GRUB Password Protection with PBKDF2  This guide secures GRUB by setting a passw
 
 This document provides a step-by-step guide to setting a superuser password for GRUB using PBKDF2 encryption.
 
-![GRUB Setup](https://github.com/AminDenizer/Grub-Password-Setup/blob/main/Grub.gif)
+![GRUB Setup](https://github.com/AminDenizer/OS-4032/blob/practice1/Grub.gif)
 
 ## Steps to Set GRUB Superuser Password
 
