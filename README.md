@@ -1,10 +1,60 @@
-# OS-4032
+# Grub-Password-Setup
+GRUB Password Protection with PBKDF2  This guide secures GRUB by setting a password using PBKDF2. It involves generating a hashed password, editing the GRUB config, updating it, and verifying changes. After rebooting, GRUB will prompt for a username and password, preventing unauthorized access to boot settings.
 
-# 🖥️ Operating Systems Laboratory
+# Setting a Superuser Password for GRUB
 
-This repository contains various exercises related to the **Operating Systems Laboratory**. Each **branch** includes a different exercise or a set of experiments covering various OS concepts.
+This document provides a step-by-step guide to setting a superuser password for GRUB using PBKDF2 encryption.
 
-## 📂 Repository Structure
+![GRUB Setup](https://github.com/AminDenizer/Grub-Password-Setup/blob/main/Grub.gif)
 
-- **Multiple Branches**: Each exercise is implemented in a separate branch.
-- **Covered Topics**: Process management, concurrency, memory management, file systems, and more.
+## Steps to Set GRUB Superuser Password
+
+### 1. Generate PBKDF2 Password Hash
+Run the following command to generate a hashed password:
+```bash
+grub-mkpasswd-pbkdf2
+```
+Copy the generated hash.
+
+### 2. Edit GRUB Configuration File
+Open the GRUB configuration file for editing:
+```bash
+sudo nano /etc/grub.d/00_header
+```
+Add the following lines at the end of the file:
+```bash
+cat<< EOF
+
+set superusers="amindenizer"
+password_pbkdf2 amindenizer <paste-your-hashed-password-here>
+
+EOF
+```
+Save the file:
+- Press `CTRL + O` and hit `Enter`
+- Press `CTRL + X` to exit
+
+### 3. Update GRUB Configuration
+Run the following command to update GRUB:
+```bash
+sudo update-grub2
+```
+
+### 4. Verify Configuration
+Check the GRUB configuration file to ensure the changes were applied:
+```bash
+sudo cat /boot/grub/grub.cfg
+```
+
+### 5. Reboot System
+Finally, reboot your system to apply the changes:
+```bash
+sudo reboot
+```
+
+After rebooting, GRUB will now require authentication for administrative actions.
+
+[![Grub Password Setup](https://img.youtube.com/vi/y2kIoila1WQ/0.jpg)](https://www.youtube.com/watch?v=y2kIoila1WQ)
+
+
+
