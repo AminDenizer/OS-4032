@@ -50,7 +50,7 @@ Finally, reboot your system to apply the changes:
 sudo reboot
 ```
 
-After rebooting, GRUB will now require authentication for administrative actions.
+After rebooting, GRUB will now require authentication for administrative actions. Click on the image to watch the result
 
 [![Grub Password Setup](https://img.youtube.com/vi/y2kIoila1WQ/0.jpg)](https://www.youtube.com/watch?v=y2kIoila1WQ)
 
