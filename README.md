@@ -25,8 +25,8 @@ Add the following lines at the end of the file:
 ```bash
 cat<< EOF
 
-set superusers="amindenizer"
-password_pbkdf2 amindenizer <paste-your-hashed-password-here>
+set superusers="<paste-your-username-here>"
+password_pbkdf2 <paste-your-username-here> <paste-your-hashed-password-here>
 
 EOF
 ```
