@@ -24,10 +24,8 @@ sudo nano /etc/grub.d/00_header
 Add the following lines at the end of the file:
 ```bash
 cat<< EOF
-
 set superusers="<paste-your-username-here>"
 password_pbkdf2 <paste-your-username-here> <paste-your-hashed-password-here>
-
 EOF
 ```
 Save the file:
