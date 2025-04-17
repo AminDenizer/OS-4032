@@ -54,7 +54,7 @@ Add the following content:
 
 # Check if the USB is added or removed
 if [ "$1" == "add" ]; then
-    # When the USB is inserted, switch to runlevel 3 (multi-user)
+    # When the USB is inserted, switch to runlevel 3 (text-mode-multi-user)
     systemctl isolate multi-user.target
 fi
 ```
