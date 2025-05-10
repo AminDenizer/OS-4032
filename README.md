@@ -15,7 +15,6 @@ In traditional SysVinit-based Linux systems, two important commands are used to 
 | Dependency     | Works independently                                     | Depends on `init` (usually a symbolic link to `init`)       |
 
 ---
-````
 ## Checking the Link Between the Two
 You can verify that `telinit` is a symbolic link to `init` using the following command:
 
