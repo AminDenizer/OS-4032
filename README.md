@@ -1,5 +1,4 @@
 
-````markdown
 # Difference Between `init` and `telinit` Commands in Linux
 
 In traditional SysVinit-based Linux systems, two important commands are used to manage **runlevels**: `init` and `telinit`.
