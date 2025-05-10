@@ -1,5 +1,3 @@
-Here's the `README.md` file based on the steps you've provided:
-
 ## Video Demo
 
 Click the link below to watch the demo video:
