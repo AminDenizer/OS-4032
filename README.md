@@ -1,4 +1,3 @@
----
 
 ````markdown
 # Difference Between `init` and `telinit` Commands in Linux
